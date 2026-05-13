@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
 
 export default function Portfolio() {
   return (
@@ -10,47 +11,7 @@ export default function Portfolio() {
       {/* Navbar */}
       <Navbar />
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6">
-        
-        <motion.div
-          initial={{ opacity: 0, y: 80 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
-        >
-          
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Hi, I'm{" "}
-            <span className="text-cyan-400">
-              Tapas Dey
-            </span>
-          </h1>
-
-          <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
-            Full Stack Developer building modern web applications
-            using React, Next.js, Node.js & MongoDB.
-          </p>
-
-          <div className="mt-8 flex justify-center gap-4">
-            
-            <a
-              href="#projects"
-              className="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
-            >
-              View Projects
-            </a>
-
-            <a
-              href="#contact"
-              className="border border-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-400 hover:text-black transition"
-            >
-              Contact Me
-            </a>
-
-          </div>
-        </motion.div>
-      </section>
-
+      <Hero />     
       {/* About Section */}
       <section
         id="about"
