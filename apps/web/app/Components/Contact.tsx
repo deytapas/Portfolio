@@ -16,7 +16,7 @@ export default function Contact() {
         },
         {
             icon: Mail,
-            link: "mailto:deytapas734@gmail.com"
+            link: "mailto:deytapas374@gmail.com"
         },
         {
             icon: SiWhatsapp,
@@ -44,7 +44,7 @@ export default function Contact() {
             </p>
 
             <a
-                href="mailto:deytapas734@gmail.com"
+                href="mailto:deytapas374@gmail.com"
                 className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-linear-to-r from-amber-400 to-orange-500 text-black font-semibold text-base shadow-[0_0_40px_rgba(245,158,11,0.3)] hover:shadow-[0_0_80px_rgba(245,158,11,0.6)] hover:scale-105 transition-all duration-500"
             >
                 Send Message
