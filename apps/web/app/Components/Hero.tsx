@@ -1,7 +1,15 @@
 
+import { ArrowDown, Download } from "lucide-react"
 import { motion } from "motion/react"
-export default function Hero() {
-    return <section className="min-h-screen flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-8 py-6">
+
+interface menuType {
+    activeMenu: string,
+    setActiveMenu: (activeMenu: string) => void,
+    scrollToSection: (id: string) => void
+}
+
+export default function Hero({ activeMenu, setActiveMenu, scrollToSection }: menuType) {
+    return <section id="Home" className="min-h-screen flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-8 py-6">
 
         <div className="my-6 md:hidden">
             <motion.img
@@ -33,31 +41,39 @@ export default function Hero() {
 
             <div className="mt-8 flex justify-center gap-4">
 
-                <a
-                    href="#projects"
+                <button
+                    onClick={(e) => {
+                        setActiveMenu("Projects")
+                        scrollToSection("Projects")
+                    }}
                     className="bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition"
                 >
-                    View Projects
-                </a>
+                    <span className="flex gap-2 justify-center items-center">
+                        View Projects <ArrowDown />
+                    </span>
+                </button>
 
                 <a
                     href="https://drive.google.com/uc?export=download&id=1lLSSdNBAwLzDM-tpxBxtc7Fgg8iRL-hY" target="_blank"
                     className="border border-cyan-400 px-6 py-3 rounded-full hover:bg-cyan-400 hover:text-black transition"
                 >
-                    Resume
+                    <span className="flex gap-2 justify-center items-center">
+                        <Download size={18} /> Resume
+                    </span>
                 </a>
 
             </div>
         </motion.div>
 
-        <div className="my-6 hidden md:flex">
+        <div className="my-6 hidden md:flex justify-center">
             <motion.img
                 src="/final.jpeg"
                 alt="Tapas Dey"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1 }}
-                className="w-96 h-96 rounded-full object-cover border-amber-400 shadow-2xl"
+                whileHover={{ scale: 1.1 }}
+                className="w-96 h-96 rounded-full object-cover shadow-2xl transition-transform duration-300"
             />
         </div>
     </section>
