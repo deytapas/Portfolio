@@ -45,7 +45,7 @@ export default function Projects() {
                     key={project.name}
                 >
                     <div className="flex justify-between mb-4">
-                        <h3 className="text-2xl font-semibold">
+                        <h3 className="text-lg md:text-2xl font-semibold">
                             {project.name}
                         </h3>
 
@@ -69,7 +69,7 @@ export default function Projects() {
                             </div>
                         })}
                     </div>
-                    <div className="mt-5 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3">
+                    <div className="mt-5 grid grid-cols-3 sm:grid-cols-6 md:grid-cols-8 gap-3">
                         {project.tech.map((tech) => {
                             return <div key={tech} className="flex text-center justify-center content-center items-center px-1 py-1 gap-2.5 rounded-xl bg-white/6 border border-white/6 hover:border-amber-500/20 transition-all duration-300 cursor-default">
                                 <span className="text-sm text-white/70 font-medium">{tech}</span>

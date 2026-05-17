@@ -44,7 +44,7 @@ export default function Experience() {
           <p className="text-white/70 mt-4 leading-relaxed">
             Built multi-vendor applications, integration connectors, and a PAM (Platform Management System) to manage and automate e-commerce operations across Shopify, BigCommerce, Etsy, and SAP B1, along with custom solutions on Wix.
           </p>
-          <div className="mt-5 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3">
+          <div className="mt-5 grid grid-cols-3 sm:grid-cols-6 md:grid-cols-8 gap-3">
             {webkulTech.map((tech)=>{
               return <div key={tech} className="flex text-center justify-center content-center items-center px-1 py-1 gap-2.5 rounded-xl bg-white/6 border border-white/6 hover:border-amber-500/20 transition-all duration-300 cursor-default">
               <span className="text-sm text-white/70 font-medium">{tech}</span>

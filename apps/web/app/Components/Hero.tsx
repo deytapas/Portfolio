@@ -49,7 +49,7 @@ export default function Hero({ activeMenu, setActiveMenu, scrollToSection }: men
                     className="bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition"
                 >
                     <span className="flex gap-2 justify-center items-center">
-                        View Projects <ArrowDown />
+                        View works <ArrowDown />
                     </span>
                 </button>
 
