@@ -85,7 +85,7 @@ export default function About() {
             >
                 <div className="w-full md:w-[70%] rounded-2xl bg-[#18151c] border border-white/10 px-10 py-10 shadow-[0_4px_24px_-1px_#0000004d,inset_0_1px_#ffffff08]">
                     <p className="text-white/80 text-base md:text-lg leading-relaxed">
-                        I am a passionate Full Stack Developer with 3 years of experience
+                        I am a passionate Full Stack Developer with 3+ years of experience
                         building modern, scalable, and user-focused web applications.
 
                         <br />
