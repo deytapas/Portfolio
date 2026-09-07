@@ -1,7 +1,8 @@
 import { Calendar, CodeXml, icons, MapPin } from "lucide-react";
 import { motion } from "motion/react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
-import { SiExpress, SiGit, SiMongodb, SiNextdotjs, SiPostgresql, SiRabbitmq, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { MdQueue } from "react-icons/md";
+import { SiExpress, SiGit, SiMongodb, SiNextdotjs, SiPostgresql, SiRabbitmq, SiRedis, SiTailwindcss, SiTypescript  } from "react-icons/si";
 
 export default function About() {
     const techStack = [
@@ -44,7 +45,15 @@ export default function About() {
         {
             name: "RabbitMQ",
             icon: SiRabbitmq
-        }
+        },
+        {
+            name: "Redis",
+            icon: SiRedis
+        },
+        {
+            name: "BullMQ",
+            icon: MdQueue
+        },
     ];
     return <section
         id="About"

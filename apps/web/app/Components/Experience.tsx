@@ -3,7 +3,8 @@ import { motion } from "motion/react";
 
 export default function Experience() {
 
-  const webkulTech = ["React", "Node.js", "Express.js","MongoDB", "Next.js", "RabbitMq", "Webhook", "Typesript"]
+  const webkulTech = ["React", "Node.js", "Express.js", "MongoDB", "Next.js", "RabbitMq", "Webhook", "Typesript"];
+  const iraTech = ["Node.js", "Express.js", "MongoDB", "Webhook", "Redis", "BullMQ", "Twilio"];
 
   return <section
     id="Experience"
@@ -33,6 +34,32 @@ export default function Experience() {
         <div className="absolute -left-[11px] top-2 w-5 h-5 rounded-full bg-cyan-400 border-4 border-black" />
         <div className="bg-[#18151c] border border-white/10 rounded-2xl p-6">
           <h3 className="text-xl font-semibold text-white">
+            Ira Technologies India Pvt. Ltd
+          </h3>
+          <p className="text-cyan-400 mt-1">
+            Full Stack Developer
+          </p>
+          <p className="text-sm text-white/50 mt-1">
+            July 2026 – Present • On Site
+          </p>
+          <p className="text-white/70 mt-4 leading-relaxed">
+            Building and maintaining backend services as part of the full stack development team, using Node.js and Express.js.
+            Working with MongoDB for application data and Redis for caching and performance optimization.
+            Implementing background job processing and task queues using BullMQ for asynchronous workflows
+          </p>
+          <div className="mt-5 grid grid-cols-3 sm:grid-cols-6 md:grid-cols-8 gap-3">
+            {iraTech.map((tech) => {
+              return <div key={tech} className="flex text-center justify-center content-center items-center px-1 py-1 gap-2.5 rounded-xl bg-white/6 border border-white/6 hover:border-amber-500/20 transition-all duration-300 cursor-default">
+                <span className="text-sm text-white/70 font-medium">{tech}</span>
+              </div>
+            })}
+
+          </div>
+        </div>
+      </div>
+      <div className="relative pl-10">
+        <div className="bg-[#18151c] border border-white/10 rounded-2xl p-6">
+          <h3 className="text-xl font-semibold text-white">
             Webkul Software Pvt. Ltd.
           </h3>
           <p className="text-cyan-400 mt-1">
@@ -45,12 +72,12 @@ export default function Experience() {
             Built multi-vendor applications, integration connectors, and a PAM (Platform Management System) to manage and automate e-commerce operations across Shopify, BigCommerce, Etsy, and SAP B1, along with custom solutions on Wix.
           </p>
           <div className="mt-5 grid grid-cols-3 sm:grid-cols-6 md:grid-cols-8 gap-3">
-            {webkulTech.map((tech)=>{
+            {webkulTech.map((tech) => {
               return <div key={tech} className="flex text-center justify-center content-center items-center px-1 py-1 gap-2.5 rounded-xl bg-white/6 border border-white/6 hover:border-amber-500/20 transition-all duration-300 cursor-default">
-              <span className="text-sm text-white/70 font-medium">{tech}</span>
-            </div>
+                <span className="text-sm text-white/70 font-medium">{tech}</span>
+              </div>
             })}
-            
+
           </div>
         </div>
       </div>

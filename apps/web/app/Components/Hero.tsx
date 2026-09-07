@@ -54,7 +54,7 @@ export default function Hero({ activeMenu, setActiveMenu, scrollToSection }: men
                 </button>
 
                 <a
-                    href="https://drive.google.com/uc?export=download&id=1lLSSdNBAwLzDM-tpxBxtc7Fgg8iRL-hY" target="_blank"
+                    href="https://drive.google.com/uc?export=download&id=1fYDZ9yBZbU_ogtVPFE16no0GhGug2o3e" target="_blank"
                     className="border border-cyan-400 px-6 py-3 rounded-full hover:bg-cyan-400 hover:text-black transition"
                 >
                     <span className="flex gap-2 justify-center items-center">
